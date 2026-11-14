@@ -1,0 +1,31 @@
+# Environment variables & secrets
+.env
+*.env.local
+*.env.*.local
+!config.example.env
+
+# Google Cloud credentials
+service-account.json
+*credentials*.json
+
+# Compiled binaries
+actual-sync
+*.exe
+*.test
+*.out
+
+# Runtime data & docker volumes
+http-api-data/
+*.sqlite
+*.sqlite3
+*.blob
+
+# Logs
+*.log
+sync.log
+
+# System & Editor
+.DS_Store
+.idea/
+.vscode/
+skills/

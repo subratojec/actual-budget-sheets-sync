@@ -1,0 +1,13 @@
+[Unit]
+Description=Sync Google Sheets transactions to Actual Budget
+After=network.target docker.service
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/singh/programming/actual_bugdet_automation
+ExecStart=/home/singh/programming/actual_bugdet_automation/actual-sync -env /home/singh/programming/actual_bugdet_automation/.env
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target
